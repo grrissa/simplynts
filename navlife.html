@@ -31,6 +31,19 @@ img {margin-bottom: -7px}
   padding: 6px;
   text-decoration: none;}
 
+.title {
+  background-color: rgb(197, 219, 203);
+  color: rgb(255, 72, 0);
+  text-decoration: none;}
+
+.title :link {
+  color: rgb(255, 72, 0);
+  text-decoration: none;} 
+
+.title :visited {
+  color: rgb(255, 72, 0);
+  text-decoration: none;} 
+
 .vertical-menu :hover {background-color: rgb(255, 208, 0);}
 
 .wjcsuabout {
@@ -49,10 +62,27 @@ img {margin-bottom: -7px}
 
 .news2 {position: absolute; top: 0px; right: 0px;}
 .news1 {position: absolute; bottom: 5px; left: 0px;}
-.gif {position: absolute; bottom: 30px; right: 20px;}
-.tessapic {position: absolute; bottom: 80px; left: 20px;}
+.navlife2 {position: absolute; top: 50%; left: 50%;  transform: translate(-50%, -50%);}
 
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;}
 
+.navlife2:hover .overlay {
+  opacity: 1;}
+
+.asset1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);}
 
 </style>
 <body>
@@ -64,14 +94,17 @@ img {margin-bottom: -7px}
             <a class="wjcsuabout" href="about.html">About</a>
         </div>      
           
-        <div> <img src="snts.png" alt="Simply Not That Serious" width="450"> </div>
+        <div class = "title"><a class="navlife" href="main.html">Simply  Not  That  Serious</a></div>
     </div>
 
     <div class = 'news2'> <img class='news2' src="news2.png" alt="newspaper" width="250"> </div>
     <div class = 'news1'> <img class='news1' src="news1.png" alt="newspaper" width="250"> </div>
-    <div class = 'gif'> <img class='gif' src="ta.gif" alt="abby and tessa" width="700"> </div>  
-    <div class = 'tessapic'> <img class='tessapic' src="title pic.png" alt="tessa pic" width="700"> </div>  
+    <div class = 'navlife2'> 
+        <img class='navlife2' src="Asset 2.png" alt="We Just Can't Shut Up" width="300"> 
+        <div class="overlay">
+            <div><img class = 'asset1' src="Asset 1.png" alt="We Just Can't Shut Up" width="500"></div>
+        </div>
+    </div>
 
 
 </body>
-</html>
