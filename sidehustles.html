@@ -62,8 +62,19 @@ img {margin-bottom: -7px}
 
 .news2 {position: absolute; top: 0px; right: 0px;}
 .news1 {position: absolute; bottom: 5px; left: 0px;}
-.abby {position: absolute; top: 100px; right: -10px;}
-.tessa {position: absolute; top: 210px; right: -10px;}
+.abby {position: absolute; top: 100px; right: -10px;
+  animation-name: moveleft;
+  animation-duration: 1s;}
+
+.tessa {position: absolute; top: 210px; right: -10px;
+  animation-name: moveleft;
+  animation-delay: 1s;
+  animation-duration: 1s;}
+
+@keyframes moveleft {
+  from {right: -10px}
+  to{right: 0px}
+}
 
 </style>
 <body>
